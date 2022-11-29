@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="p-5 mb-4 text-center">
+        <h1 class="display-3"><span class="headerText">Work Day Scheduler</span></h1>
+        <p class="lead"><span class="headerText">A simple calendar app for scheduling your work day</span></p>
+        <p id="currentDay" class="lead headerText"></p>
+    </header>
+      <div class="container-fluid px-5">
+       
+        <div id="hour_9" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourNine">09</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block9"> </textarea>
+          <button id="btnNine" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_10" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourTen">10</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block10"> </textarea>
+          <button id="btnTen" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_11" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourEleven">11</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block11"> </textarea>
+          <button id="btnEleven" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_12" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourTwelve">12</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block12"> </textarea>
+          <button id="btnTwelve" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_13" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourThirteen">13</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block13"> </textarea>
+          <button id="btnThirteen" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_14" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourFourteen">14</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block14"> </textarea>
+          <button id="btnFourteen" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_15" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourFifteen">15</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block15"> </textarea>
+          <button id="btnFifteen" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_16" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourSixteen">16</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block16"> </textarea>
+          <button id="btnSixteen" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div id="hour_17" class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3 textFormat"><span id= "hourSeventeen">17</span>00</div>
+          <textarea class="col-8 col-md-10 description" rows="3" id="block17"> </textarea>
+          <button id="btnSeventeen" class="btn saveBtn col-2 col-md-1" aria-label="save">
+            <i class="fas fa-save" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
